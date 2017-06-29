@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Forms-1</title>
+</head>
+<body>
+<div class="container">    
+	<form name="firstForm" novalidate>
+		<div class="row">
+			<label for="name">Имя</label>
+			<input type="text" name="userName" id="name">
+			<span class="help">Первая буква заглавная, не менее 2 букв, без пробелов</span>
+		</div>
+		<div class="row">
+			<label for="surname">Фамилия</label>
+			<input type="text" name="userSurname" id="surname">
+			<span class="help">Первая буква заглавная, не менее 2 букв, без пробелов</span>
+		</div>
+		<div class="row">
+			<label for="age">Возраст</label>
+			<input type="text" name="userAge" id="age">
+			<span class="help">От 18 до 100, без пробелов</span>
+		</div>
+		<div class="row">
+			<label for="email">Электронный адрес</label>
+			<input type="email" name="userEmail" id="email">
+			<span class="help">В формате: name@xxx.com, без пробелов</span>
+		</div>
+		<button name="addNewUser">Добавить пользователя</button>
+	</form>
+	<div class="error"></div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
